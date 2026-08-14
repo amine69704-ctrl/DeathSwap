@@ -1,0 +1,19 @@
+name: DeathSwap
+version: 1.0.0
+main: me.deathswap.DeathSwap
+api-version: '1.13'
+
+author: YourName
+description: A fully customizable DeathSwap plugin
+
+commands:
+  deathswap:
+    description: DeathSwap main command
+    usage: /deathswap <team1|team2|start|stop|reset|timer|score|teams>
+    aliases:
+      - ds
+
+permissions:
+  deathswap.admin:
+    description: Allows the player to manage DeathSwap
+    default: op
