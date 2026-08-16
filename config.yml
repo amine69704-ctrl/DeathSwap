@@ -1,0 +1,18 @@
+# DeathSwap configuration
+# All settings below can be changed without editing the plugin code.
+
+# Time between swaps, in seconds.
+# 300 = 5 minutes, 600 = 10 minutes.
+swap-time-seconds: 300
+
+# Countdown before the first timer starts.
+start-countdown-seconds: 3
+
+# Points required to win the game.
+points-to-win: 3
+
+# Sound played to all online players when a swap happens.
+swap-sound: ENTITY_TNT_PRIMED
+
+messages:
+  prefix: "&8[&cDeathSwap&8] &r"
