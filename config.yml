@@ -1,0 +1,27 @@
+# ==========================================
+#           SELECT-COMBAT CONFIG
+# ==========================================
+
+combat-time: 15
+
+combat-color: red
+combat-timer-color: white
+
+combat-display: "%combat%Combat %timer%%time%s"
+
+messages:
+  combat-start: "&cNOW YOU ARE COMBAT"
+  combat-end: "&aNOW YOU ARE NOT COMBAT"
+
+wand:
+  material: WOODEN_AXE
+  name: "&6SCOMBAT WAND"
+
+kill-effect:
+  enabled: true
+  type: TOTEM
+  particle: TOTEM_OF_UNDYING
+
+combat:
+  block-third-party-damage: true
+  refresh-timer-on-hit: true
