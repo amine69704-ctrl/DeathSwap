@@ -1,0 +1,35 @@
+name: DeathSwap
+version: 1.1.1
+main: me.deathswap.DeathSwap
+api-version: '1.21'
+
+author: DeathSwap
+description: A fun and configurable Minecraft DeathSwap game plugin.
+
+commands:
+  deathswap:
+    description: Main DeathSwap command
+    usage: /deathswap <timer|score|teams|team1|team2|start|stop|reset|scoreboard>
+    aliases:
+      - ds
+
+permissions:
+  deathswap.admin:
+    description: Allows access to DeathSwap admin commands
+    default: op
+
+  deathswap.timer:
+    description: Allows viewing the DeathSwap timer
+    default: true
+
+  deathswap.score:
+    description: Allows viewing the DeathSwap score
+    default: true
+
+  deathswap.teams:
+    description: Allows viewing DeathSwap teams
+    default: true
+
+  deathswap.scoreboard:
+    description: Allows showing or hiding the DeathSwap scoreboard
+    default: true
