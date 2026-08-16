@@ -1,0 +1,146 @@
+# ==========================================================
+# DeathSwap Configuration
+# ==========================================================
+
+# Time between swaps.
+# 300 seconds = 5 minutes
+# 600 seconds = 10 minutes
+swap-time-seconds: 300
+
+# Countdown before the DeathSwap game starts.
+start-countdown-seconds: 3
+
+# Points required to win the game.
+points-to-win: 3
+
+# ==========================================================
+# Score System
+# ==========================================================
+
+score:
+  # Only deaths that happen AFTER a swap count.
+  count-only-after-swap: true
+
+  # If both teams have the same number of deaths,
+  # nobody receives points.
+  equal-deaths-give-no-points: true
+
+  # A player's death before the first swap gives no points.
+  ignore-deaths-before-first-swap: true
+
+  # Leaving the server is NOT counted as a death.
+  quit-gives-no-points: true
+
+# ==========================================================
+# Swap
+# ==========================================================
+
+swap:
+  # Play a TNT sound when the swap happens.
+  sound: true
+
+  # Sound used when swapping.
+  sound-name: "ENTITY_TNT_PRIMED"
+
+  # If the TNT sound is unavailable, use this sound instead.
+  fallback-sound: "ENTITY_GENERIC_EXPLODE"
+
+  # Show a swap message to players.
+  message: true
+
+# ==========================================================
+# Player Leave / Join
+# ==========================================================
+
+player-location:
+  # Save a player's location when they leave.
+  save-last-location-on-quit: true
+
+  # Restore the saved location when they join again.
+  restore-location-on-join: true
+
+  # Leaving the server does not give the other team points.
+  quit-counts-as-death: false
+
+# ==========================================================
+# Scoreboard
+# ==========================================================
+
+scoreboard:
+  enabled: true
+
+  title: "&c&lDEATH SWAP"
+
+  show-time: true
+  show-team1-score: true
+  show-team2-score: true
+  show-round: true
+
+# ==========================================================
+# Timer Warnings
+# ==========================================================
+
+timer:
+  # Show warning at these remaining seconds.
+  warnings:
+    - 60
+    - 30
+
+  # Show 10, 9, 8 ... 1 before a swap.
+  ten-second-countdown: true
+
+# ==========================================================
+# Messages
+# ==========================================================
+
+messages:
+
+  prefix: "&6&lDEATH SWAP &7» "
+
+  game-starting: "&aDeathSwap game is starting!"
+
+  game-started: "&c&lTHE DEATH SWAP IS STARTING NOW!"
+
+  game-stopped: "&cThe DeathSwap game has been stopped."
+
+  game-reset: "&eThe DeathSwap game has been reset."
+
+  swap: "&b&lDEATH SWAP! &fYou have been swapped!"
+
+  swap-complete: "&aRandom team swap completed!"
+
+  swap-skipped: "&cSwap skipped because a team has no online players."
+
+  no-permission: "&cYou don't have permission!"
+
+  game-not-running: "&cDeathSwap is not running!"
+
+  game-already-running: "&cGame is already running!"
+
+  team1-empty: "&cTeam 1 has no players!"
+
+  team2-empty: "&cTeam 2 has no players!"
+
+  timer: "&eDeathSwap time remaining: &c{seconds} seconds"
+
+  score: "&eSCORE &7| &bTeam 1: &f{team1} &7- &cTeam 2: &f{team2}"
+
+  no-points: "&7Round result: &fNo points."
+
+  team1-wins: "&b&lTEAM 1 WINS!"
+
+  team2-wins: "&c&lTEAM 2 WINS!"
+
+  game-ended: "&eDeathSwap game has ended!"
+
+  respawn: "&eYou are back in DeathSwap!"
+
+  scoreboard-shown: "&aScoreboard shown."
+
+  scoreboard-hidden: "&aScoreboard hidden."
+
+# ==========================================================
+# Language
+# ==========================================================
+
+language: "en"
