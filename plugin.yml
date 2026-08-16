@@ -1,0 +1,17 @@
+name: SELECT-COMBAT
+version: ${version}
+main: com.selectcombat.SelectCombat
+api-version: '1.21'
+author: MSI
+description: Advanced region-based combat system with combat locking and timers.
+
+commands:
+  scombat:
+    description: Main SELECT-COMBAT command
+    usage: /scombat <wand|create|list|help>
+    permission: selectcombat.admin
+
+permissions:
+  selectcombat.admin:
+    description: Allows access to SELECT-COMBAT administration commands
+    default: op
